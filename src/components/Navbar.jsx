@@ -32,7 +32,7 @@ const Navbar = () => {
             <div id="title+links" className="flex justify-start">
                 <h1
                     id="title"
-                    className="text-3xl p-2 tracking-tight font-semibold"
+                    className="pl-4 text-3xl p-2 tracking-tight font-semibold"
                 >
                     <FaPaw
                         size={20}
@@ -43,7 +43,7 @@ const Navbar = () => {
                 </h1>
                 <div
                     id="links"
-                    className="flex items-center invisible md:visible text-white"
+                    className="flex ml-[2%] items-center invisible md:visible text-white"
                 >
                     <ul className="inline-flex gap-4 text-lg">
                         {links.map(({ id, link }) => (
@@ -56,11 +56,11 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-            <div id="FaBars" className="fixed top-0 right-0 md:hidden">
+            <div id="FaBars" className="absolute top-0 right-0 md:hidden">
                 <FaBars
                     size={30}
                     color="white"
-                    className="m-2"
+                    className="m-4"
                     onClick={() => alert(`Works!`)}
                 />
             </div>
