@@ -28,26 +28,19 @@ const Navbar = () => {
         },
     ];
     return (
-        <div className="h-15 w-full text-white">
-            <div id="title+links" className="flex justify-start">
-                <h1
-                    id="title"
-                    className="pl-4 text-3xl p-2 tracking-tight font-semibold"
-                >
-                    <FaPaw
-                        size={20}
-                        color="white"
-                        className="inline-flex mr-1"
-                    />
+        <div class="flex w-screen">
+            <div class="flex justify-center items-center">
+                <div className="flex justify-center items-center px-2 text-2xl tracking-tighter font-bold p-2">
+                    <FaPaw size={20} />
                     tindog
-                </h1>
-                <div
-                    id="links"
-                    className="flex ml-[2%] items-center invisible md:visible text-white"
-                >
-                    <ul className="inline-flex gap-4 text-lg">
+                </div>
+                <div className="hidden md:flex">
+                    <ul className="flex gap-2 text-lg">
                         {links.map(({ id, link }) => (
-                            <li key={id} className="capitalize">
+                            <li
+                                key={id}
+                                className="capitalize hover:cursor-pointer"
+                            >
                                 <Link to={link} smooth duration={500}>
                                     {link}
                                 </Link>
@@ -55,12 +48,10 @@ const Navbar = () => {
                         ))}
                     </ul>
                 </div>
-            </div>
-            <div id="FaBars" className="absolute top-0 right-0 md:hidden">
                 <FaBars
-                    size={30}
-                    color="white"
-                    className="m-4"
+                    size={20}
+                    color="black"
+                    className="absolute right-0 mr-4"
                     onClick={() => alert(`Works!`)}
                 />
             </div>
