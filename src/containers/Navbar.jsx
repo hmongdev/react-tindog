@@ -28,9 +28,9 @@ const Navbar = () => {
         },
     ];
     return (
-        <div class="flex w-screen">
-            <div class="flex justify-center items-center">
-                <div className="flex justify-center items-center px-2 text-2xl tracking-tighter font-bold p-2">
+        <div className="flex w-screen">
+            <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center px-2 text-2xl tracking-tighter font-bold p-2 md:text-5xl">
                     <FaPaw size={20} />
                     tindog
                 </div>
@@ -51,7 +51,7 @@ const Navbar = () => {
                 <FaBars
                     size={20}
                     color="black"
-                    className="absolute right-0 mr-4"
+                    className="absolute right-0 mr-4 md:hidden"
                     onClick={() => alert(`Works!`)}
                 />
             </div>
