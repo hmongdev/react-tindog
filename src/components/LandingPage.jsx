@@ -1,13 +1,13 @@
 import React from 'react';
 import iphone6 from '../assets/iphone6.png';
 import StoreBadge from 'react-store-badge';
-import Navbar from '../containers/Navbar';
+import Navbar from './Navbar';
 
 const LandingPage = () => {
     return (
         <div className="flex flex-col w-full h-screen justify-center text-center">
             <Navbar />
-            <div class="flex grow flex-col md:flex-row justify-center items-center">
+            <div className="flex grow flex-col md:flex-row justify-center items-center">
                 <h1 className="w-3/5 italic font-extrabold lg:not-italic text-[9vw]">
                     Sniff Right®
                 </h1>
@@ -20,7 +20,7 @@ const LandingPage = () => {
                 </div>
             </div>
 
-            <div class="flex flex-col gap-5 text-md justify-center items-center h-fit my-10">
+            <div className="flex flex-col gap-5 text-md justify-center items-center h-fit my-10">
                 <h2 className="font-extrabold italic lg:not-italic lg:text-2xl">
                     Anything is paw-sible™️
                 </h2>
@@ -31,7 +31,7 @@ const LandingPage = () => {
                     log in
                 </button>
             </div>
-            <div class="flex justify-center items-center w-full h-fit py-4">
+            <div className="flex justify-center items-center w-full h-fit py-4">
                 <span>
                     <StoreBadge appStoreUrl="https://apps.apple.com/us/app/cheerswipe/id1468158095?ls=1" />
                 </span>
