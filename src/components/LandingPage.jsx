@@ -11,16 +11,16 @@ const LandingPage = () => {
                 <h1 className="w-3/5 italic font-extrabold lg:not-italic text-[9vw]">
                     Sniff Right®
                 </h1>
-                <div className="hidden w-1/5 md:flex md:w-1/4">
+                <div className="flex w-1/4 md:max-w-[12%]">
                     <img
                         src={iphone6}
                         alt="logo"
-                        className="mx-auto w-full hover:rotate-12 hover:scale-105 duration-500"
+                        className="hover:rotate-12 hover:scale-105 duration-500"
                     />
                 </div>
             </div>
 
-            <div className="flex flex-col gap-5 text-md justify-center items-center h-fit my-10">
+            <div className="flex flex-col gap-5 text-md justify-center items-center h-fit py-10">
                 <h2 className="font-extrabold italic md:not-italic md:text-4xl">
                     Anything is paw-sible™️
                 </h2>
@@ -31,7 +31,7 @@ const LandingPage = () => {
                     log in
                 </button>
             </div>
-            <div className="flex justify-center items-center w-full h-fit py-4">
+            <div className="flex justify-evenly items-center w-full h-fit py-4">
                 <span>
                     <StoreBadge appStoreUrl="https://apps.apple.com/us/app/cheerswipe/id1468158095?ls=1" />
                 </span>

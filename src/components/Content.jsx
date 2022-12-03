@@ -93,7 +93,7 @@ const Content = () => {
     return (
         <>
             <div className="flex flex-col w-full h-screen items-center justify-start">
-                <figure className="border shadow-xl border-gray-300 h-1/3 my-2 w-[90vw] rounded-xl">
+                <figure className="border shadow-xl border-gray-300 h-1/3 m-10 w-[90vw] rounded-xl">
                     <figcaption className="mx-7 mt-7 flex">
                         <Swiper modules={[Autoplay]} autoplay>
                             {quotes.map(({ name, index, quote, src }) => {
@@ -117,11 +117,11 @@ const Content = () => {
                                             </div>
                                         </div>
                                         <q className="md:text-2xl">{quote}</q>
-                                        <div className="hidden md:flex justify-center items-center my-10">
+                                        <div className="hidden md:flex justify-center items-center">
                                             <img
                                                 src={src}
                                                 alt="logo"
-                                                className="rounded-full w-1/4"
+                                                className="rounded-full w-[15%]"
                                             />
                                         </div>
                                     </SwiperSlide>
@@ -130,7 +130,7 @@ const Content = () => {
                         </Swiper>
                     </figcaption>
                 </figure>
-                <div className="w-[90vw] h-fit my-10 grid grid-cols-2 items-center">
+                <div className="w-[90vw] h-fit grid grid-cols-2 items-center">
                     <img src={mashable} alt="tech" />
                     <img src={tnw} alt="tech" />
                     <img src={techcrunch} alt="tech" />

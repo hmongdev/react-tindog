@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
-import { FaBars, FaTimes, FaPaw } from 'react-icons/fa';
+import React from 'react';
+import { FaBars, FaPaw } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false);
-
     const links = [
         {
             id: 1,
@@ -45,7 +43,7 @@ const Navbar = () => {
                                     to={link}
                                     smooth
                                     duration={500}
-                                    className="md:text-3xl"
+                                    className="md:text-2xl"
                                 >
                                     {link}
                                 </Link>
@@ -55,9 +53,8 @@ const Navbar = () => {
                 </div>
                 <FaBars
                     size={20}
-                    color="black"
+                    color="white"
                     className="absolute right-0 mr-4 md:hidden"
-                    onClick={() => alert(`Works!`)}
                 />
             </div>
         </div>
