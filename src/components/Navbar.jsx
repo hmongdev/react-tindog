@@ -35,13 +35,18 @@ const Navbar = () => {
                     tindog
                 </div>
                 <div className="hidden md:flex">
-                    <ul className="flex gap-2 text-lg">
+                    <ul className="flex gap-3 text-lg">
                         {links.map(({ id, link }) => (
                             <li
                                 key={id}
                                 className="capitalize hover:cursor-pointer"
                             >
-                                <Link to={link} smooth duration={500}>
+                                <Link
+                                    to={link}
+                                    smooth
+                                    duration={500}
+                                    className="md:text-3xl"
+                                >
                                     {link}
                                 </Link>
                             </li>

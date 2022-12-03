@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 
 const LandingPage = () => {
     return (
-        <div className="flex flex-col w-full h-screen justify-center text-center">
+        <div className="flex flex-col w-full h-screen justify-center text-center bg-gradient-to-b from-black via-red-400 to-black text-white">
             <Navbar />
             <div className="flex grow flex-col md:flex-row justify-center items-center">
                 <h1 className="w-3/5 italic font-extrabold lg:not-italic text-[9vw]">
@@ -21,13 +21,13 @@ const LandingPage = () => {
             </div>
 
             <div className="flex flex-col gap-5 text-md justify-center items-center h-fit my-10">
-                <h2 className="font-extrabold italic lg:not-italic lg:text-2xl">
+                <h2 className="font-extrabold italic md:not-italic md:text-4xl">
                     Anything is paw-sible™️
                 </h2>
-                <button className="capitalize py-2 font-semibold bg-white text-black rounded-full w-[80%] hover:bg-gray-300">
+                <button className="capitalize py-2 md:py-4 md:text-2xl font-semibold bg-white text-black hover:bg-black hover:text-white rounded-full w-[80%]">
                     create account
                 </button>
-                <button className="capitalize py-2 font-semibold bg-white-100 rounded-full hover:text-black border-2 w-[80%]">
+                <button className="capitalize py-2 md:py-4 md:text-2xl font-semibold bg-white-100 rounded-full hover:bg-white hover:text-black border-2 w-[80%] text-white">
                     log in
                 </button>
             </div>
