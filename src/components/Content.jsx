@@ -30,7 +30,7 @@ const Content = () => {
     ];
     return (
         <div className="flex w-full h-screen justify-center">
-            <figure className="border shadow-lg border-gray-300 h-2/5 my-2 w-[90vw] rounded-xl">
+            <figure className="border shadow-xl border-gray-300 h-2/5 my-2 w-[90vw] rounded-xl">
                 <figcaption className="mx-7 mt-7 flex">
                     <Swiper modules={[Autoplay]} autoplay>
                         {quotes.map(({ name, index, quote }) => {
@@ -41,7 +41,9 @@ const Content = () => {
                                 >
                                     <div className="flex relative">
                                         <div className="w-4/5">
-                                            <h1 className="w-full">{name}</h1>
+                                            <h1 className="w-full font-semibold">
+                                                {name}
+                                            </h1>
                                             <hr className="w-full my-3 border-gray-400" />
                                         </div>
                                         <div className="absolute right-0">
