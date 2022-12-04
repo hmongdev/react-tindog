@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 
 const LandingPage = () => {
     return (
-        <div className="flex flex-col w-full h-screen justify-center text-center bg-gradient-to-b from-black via-red-400 to-black text-white">
+        <div className="flex flex-col w-full h-screen justify-center text-center bg-gradient-to-b from-black via-red-400 to-black text-white mb-10">
             <Navbar />
             <div className="flex grow flex-col md:flex-row justify-center items-center">
                 <h1 className="w-3/5 italic font-extrabold lg:not-italic text-[9vw]">

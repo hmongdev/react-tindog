@@ -92,9 +92,9 @@ const Content = () => {
     ];
     return (
         <>
-            <div className="flex flex-col w-full h-screen items-center justify-start">
-                <figure className="border shadow-xl border-gray-300 h-1/3 m-10 w-[90vw] rounded-xl">
-                    <figcaption className="mx-7 mt-7 flex">
+            <div className="flex flex-col w-full h-screen items-center justify-start gap-10">
+                <figure className="border shadow-xl border-gray-300 h-fit p-10 w-[90vw] rounded-xl">
+                    <figcaption className="flex">
                         <Swiper modules={[Autoplay]} autoplay>
                             {quotes.map(({ name, index, quote, src }) => {
                                 return (
@@ -121,7 +121,7 @@ const Content = () => {
                                             <img
                                                 src={src}
                                                 alt="logo"
-                                                className="rounded-full w-[15%]"
+                                                className="rounded-full w-1/6"
                                             />
                                         </div>
                                     </SwiperSlide>
