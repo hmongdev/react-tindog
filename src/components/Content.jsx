@@ -130,7 +130,7 @@ const Content = () => {
                         </Swiper>
                     </figcaption>
                 </figure>
-                <div className="w-[90vw] h-fit grid grid-cols-2 items-center">
+                <div className="w-[90vw] sm:grid sm:grid-cols-4 flex flex-col justify-center items-center">
                     <img src={mashable} alt="tech" />
                     <img src={tnw} alt="tech" />
                     <img src={techcrunch} alt="tech" />
