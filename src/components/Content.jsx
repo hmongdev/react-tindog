@@ -38,7 +38,7 @@ const Content = () => {
             index: 3,
             name: 'Max',
             src: duke,
-            quote: `I'm done sniffing other's dog's butts`,
+            quote: `I'm done sniffing other dog's butts`,
         },
         {
             index: 4,
@@ -95,7 +95,7 @@ const Content = () => {
             <div className="flex flex-col w-full h-screen items-center justify-start gap-10">
                 <figure className="border shadow-xl border-gray-300 h-fit p-10 w-[90vw] rounded-xl">
                     <figcaption className="flex">
-                        <Swiper modules={[Autoplay]} autoplay>
+                        <Swiper modules={[Autoplay]} autoplay={{ delay: 5000 }}>
                             {quotes.map(({ name, index, quote, src }) => {
                                 return (
                                     <SwiperSlide
